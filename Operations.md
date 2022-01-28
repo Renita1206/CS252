@@ -13,6 +13,9 @@
 - ORR - Logical addition
 - NOT 
 - MVN - Negation (1s complement)
+- SUB - subraction
+- RSB - reverse subraction (destination - source)
+- MUL - Multiplication
 - CMP - Compare
 - BEQ - Branch equal to
 - BPL - Branch plus
