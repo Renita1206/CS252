@@ -1,0 +1,16 @@
+; CHECK IF NUMBER IS POSITIVE, NEGATIVE OR EQUAL TO 0
+
+MOV R0, #-1
+
+CMP R0,#0
+    BEQ L1 ; 
+    BPL L2 ; BGT - Branch plus or greater than
+    MOV R1,#3
+    SWI 0X011
+
+
+L1: MOV R1, #1; L3
+L3: SWI 0X011
+L2: MOV R1, #2
+L4: SWI 0X011
+

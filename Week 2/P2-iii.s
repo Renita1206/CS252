@@ -1,0 +1,20 @@
+; ADD SUM OF ELEMENTS IN AN ARRAY AND STORE IN ANOTHER MEMORY LOCATION FOR BYTE OR 8 BIT
+
+.DATA
+    A: .BYTE 10, 20, 30, 40, 50, 60, 70, 80, 90, 100
+    SUM: .HWORD 0
+
+.TEXT 
+    LDR R1, =A
+    LDR R2, =SUM
+
+    MOV R4, #0 ; COUNT REGISTER
+
+    LOOP:   LDRB R3, [R1]
+            ADD R5, R5, R3;
+            ADD R1, R1, #1;
+            ADD R4, R4, #1;
+            CMP R4, #10
+            BNE LOOP
+    STRH R5, [R2]; SUM STORED AS 16 BIT
+    SWI 0X011

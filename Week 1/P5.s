@@ -1,0 +1,15 @@
+; CHECK IF NUMBER IS EVEN OR ODD
+
+MOV R0, #6
+MOV R1, #1
+
+AND R1, R0, #1;
+CMP R1, #1
+    BEQ L1; ODD
+    MOV R1,#0 ; EVEN
+    SWI 0X011
+
+
+L1: MOV R1, #1; L3
+L3: SWI 0X011
+
