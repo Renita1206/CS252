@@ -1,0 +1,10 @@
+; LOGICAL OPERATIONS
+
+MOV R0, #5
+MOV R1, #6
+
+AND R3, R1, R2 ; AND OPERATION
+ORR R4, R1, R2 ; OR OPERATION
+MVN R5, R1; Negation of R1 stored in register R5 (1s complement)
+
+SWI 0X011; LOGICAL END OF PROGRAM
