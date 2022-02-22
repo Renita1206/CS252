@@ -2,11 +2,11 @@
 
 ## Commands 
 - MOV - Move value to register
-- LDR - Load
+- LDR - Load word into register
 - LDRH - Load Half word (16 Bit)
 - LDRB - Load a byte (8 bit)
 - ADD - Add two values stored in registers
-- STR - Store/Write value in register to a memory address
+- STR - Store/Write/Save value from register to a memory address
 - STRH - Store for Half word (16 Bit)
 - STRB - Store a byte (8 bit)
 - AND - Logical multiplication
