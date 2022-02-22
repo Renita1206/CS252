@@ -19,8 +19,11 @@
 - CMP - Compare
 - BEQ - Branch equal to
 - BPL - Branch plus
+- BMI - Branch Minus 
 - BGT - Branch Greater Than
 - BNE - Branch Not Equal
+- VC - Overflow clear
+- BLT - Branch if less than
 - SWI - End of program
 
 ## Assembler Directives
