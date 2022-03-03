@@ -1,0 +1,19 @@
+;find smallest element in an array 
+
+.DATA 
+A:.WORD 50,30,10,20,5
+B:.WORD 0
+
+.TEXT
+LDR R0,=A
+LDR R1,=B
+MOV R2,#4
+LDR R3,[R0],#4
+LOOP:LDR R4,[R0],#4
+CMP R3,R4
+MOVGE R3,R4
+SUB R2,R2,#1
+CMP R2,#0
+BNE LOOP
+STR R3,[R1]
+SWI 0X11
